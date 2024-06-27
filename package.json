@@ -1,0 +1,29 @@
+{
+  "name": "githuboauth",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "main.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "axios": "^0.21.1",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node main.js",
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/connor33341/github-oauth.git"
+  },
+  "keywords": [
+    "oauth"
+  ],
+  "author": "connor_33341",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/connor33341/github-oauth/issues"
+  },
+  "homepage": "https://github.com/connor33341/github-oauth#readme"
+}
