@@ -17,6 +17,19 @@ app.get("/auth/github", (req, res) => {
   res.redirect(githubAuthUrl);
 });
 
+// Glitch Demo
+app.get("/", (req, res) => {
+  const githubAuthUrl = `https://github.com/login/oauth/authorize?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}`;
+  res.redirect(githubAuthUrl);
+});
+
+// Step 2: Handle the callback from GitHub
+app.get("/auth/github/callback", async (req, res) => {
+  const { code } = req.query;
+
+  if (!code) {
+    return res.status(400).send("Missing authorization code");
+  }
 
   try {
     // Step 3: Exchange the authorization code for an access token
